@@ -1,0 +1,144 @@
+@use 'text';
+@mixin flex {
+  display: flex;      
+  flex-flow: row wrap;
+}
+@mixin space {
+  @include flex;
+  justify-content: space-between;
+}
+%margins-shared {
+  margin-left: -40px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+%width-shared {
+  width: 364px;
+}
+%photo-shared {
+  width: 462px;
+}
+
+
+.home__divider {
+        visibility: hidden;
+    }
+
+.home__intro {
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.home-categories__item {
+    margin-left: -40px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.home-categories__item--new {
+    @extend %margins-shared;
+    margin-top: px;
+    padding-bottom: 60px;
+}
+
+.home-categories__name {
+    margin-left: 10px;
+    color: $primary-color;
+    position: relative;
+    margin-top: -30px;
+    font-weight: 600;
+}
+
+.home__hours {
+    margin-left: 40px;
+    margin-top: -12px;
+}
+
+/* responsive styles */
+
+@media (min-width: 760px) {
+    
+    .home-categories { 
+        @include space;
+        width: 710px;
+    }
+    
+    .home-categories__photo {
+        width: 364px;
+    }
+    
+    .home-categories__item {  
+        box-sizing: border-box;
+        width: 364px;
+   }
+    
+    .home-categories__name {
+        margin-bottom: 30px;  
+        margin-top: -30px;
+    }
+    
+    .home-categories__photo--new {
+        @extend %width-shared;
+        height: 214px;
+    }
+    
+    .home__divider {
+        margin-left: 204px;
+        margin-bottom: 60px;
+        visibility: visible;
+    }
+    
+    .home__hours {
+        margin-left: 247px;
+        width: 760px;
+        margin-bottom: 100px;
+    }
+    
+    .home__intro {
+        width: 440px;
+        text-align: center;
+        margin-left: 164px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .home-categories { 
+        @include space;
+        width: 920px;
+        margin-left: 115px;
+   }
+    
+    .home-categories__photo {
+        width: 462px;    
+    }
+    
+    .home-categories__item {  
+        box-sizing: border-box;
+        width: 462px;
+   }
+    
+    .home-categories__name {
+        margin-bottom: 30px;  
+        margin-top: -30px;
+    }
+    
+    .home-categories__photo--new {
+        @extend %photo-shared;
+        height: 273px;
+    }
+    
+    .home__divider {
+        margin-left: 420px;
+    }
+    
+    .home__hours {
+        margin-left: 466px;
+    }
+    
+    .home__intro {
+        width: 470px;
+        margin-left: 364px;
+    }
+}

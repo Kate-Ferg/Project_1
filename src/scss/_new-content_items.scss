@@ -1,0 +1,38 @@
+.new-content__title {
+    width: 180px;
+    margin-left: 160px;
+    margin-top: -80px;
+    margin-bottom: 40px;
+}
+
+/* responsive styles */
+
+@media (min-width: 760px) {
+    
+    .new-content__img {
+        width: 561px;
+        height: 362px;
+        margin-left: 103px;
+        margin-bottom: 60px;
+    }
+    
+    .new-content__title {
+        width: 370px;
+        margin-left: 285px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .new-content__img {
+        width: 960px;
+        height: 620px;
+        margin-left: 121px;
+        margin-bottom: 110px;
+    }
+    
+    .new-content__title {
+        margin-left: 514px;
+    }
+}
