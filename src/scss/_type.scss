@@ -1,0 +1,80 @@
+$font-stack: raleway, sans-serif;
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$tertiary-color: #A5B5BA;
+
+.footer__info {
+    color: $secondary-color;
+    padding-top: 20px;
+    margin-left: 40px;
+    font-family: $font-stack;
+    width: 280px;
+}
+
+h1 {
+    font-family: tangerine, sans-serif;
+    font-weight: 400;
+    color: $primary-color;
+    font-size: 6.2rem;
+    line-height: 5rem;
+    margin: 0 0 8px;
+}
+
+h2 {
+    font-family: $font-stack;
+    font-weight: 400;
+    color: #89BE05;
+    font-size: 2.6rem;
+    line-height: 4rem; 
+    text-align: left;
+    width: 375px;
+    margin-left: 40px;
+}
+
+h3 {
+    font-family: $font-stack;
+    color: $tertiary-color;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin: 0 0 9px;
+}
+
+p {
+    font-family: tinos, serif;
+    font-weight: 400;
+    color: $primary-color;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 0 0 9px;
+}
+
+/* responsive styles */
+
+@media (min-width: 760px) {
+    
+    .footer__info {
+        width: 760px;
+    }
+    
+    h1 {
+        font-weight: 600;
+    }
+   
+    h2 {
+        margin-left: 0px;
+        width: 760px;
+        text-align: center;
+    }  
+}
+
+@media (min-width: 1200px) {
+    
+    .footer__info {
+        margin-left: 121px;
+    }
+    
+    h2 {
+        width: 1200px;
+    }
+}
